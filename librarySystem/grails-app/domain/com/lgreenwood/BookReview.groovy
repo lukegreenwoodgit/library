@@ -1,10 +1,11 @@
 package com.lgreenwood
 
 class BookReview {
-	String book
+	Book book
 	Date datePublished
-	String student
+	Student student
 	String review
+	
     static constraints = {
 	book blank:false, nullable:false
 	datePublished blank:false, nullable:false
