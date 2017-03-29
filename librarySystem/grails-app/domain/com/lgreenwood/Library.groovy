@@ -13,7 +13,7 @@ class Library {
 	name blank:false, nullable:false
 	address blank:false, nullable:false, widget:'textarea'
 	openingHours blank:false, nullable:false
-	location blank:false, nullable:fasle
+	location blank:false, nullable:false
 	studySpaces blank:false, nullable:false, min:1, max:200
     }
 }
