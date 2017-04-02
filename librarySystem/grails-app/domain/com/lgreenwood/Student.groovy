@@ -5,7 +5,7 @@ class Student {
 	String email
 	String userName
 	String password
-	String studentId
+	String studentID
 	Course course
 	Library library
 	static hasMany=[bookReviews:BookReview, books:Book]
