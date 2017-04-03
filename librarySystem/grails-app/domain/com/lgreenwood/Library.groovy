@@ -7,6 +7,10 @@ class Library {
 	String location
 	int studySpaces
 	static hasMany=[books:Book, librarians:Librarian, students:Student]
+	
+	String toString() {
+		"$name"
+	}
 
     static constraints = {
 

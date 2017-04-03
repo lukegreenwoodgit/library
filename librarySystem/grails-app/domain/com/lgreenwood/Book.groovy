@@ -12,6 +12,10 @@ class Book {
 	Boolean overdue
 	static hasMany=[bookReviews:BookReview]
 
+	String toString() {
+		"$title"
+	}
+
     static constraints = {
 	title blank:false, nullable:false
 	subject blank:false, nullable:false

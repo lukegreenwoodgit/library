@@ -3,7 +3,7 @@ package com.lgreenwood
 class BootStrap {
 
     def init = { servletContext ->
-	def library1 = new Library(
+	/*def library1 = new Library(
 		name:'The Library',
 		address:'123 Library Lane',
 		openingHours:'09:00 - 19:00',
@@ -126,7 +126,7 @@ class BootStrap {
 		review:'This book is ok, not really that useful'
 	).save()
 	//book2.addToBookReviews(bookReview2)
-
+	*/
     }
     def destroy = {
     }
