@@ -13,6 +13,7 @@ class Librarian {
 		"$name"
 	}
 
+
     static constraints = {
 	name blank:false, nullable:false
 	email blank:false, nullable:false, email:true
