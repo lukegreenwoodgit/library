@@ -43,7 +43,7 @@
 			<h3>Search Students</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae pretium dolor. Praesent ac felis sed nisi ultrices condimentum ac id neque. Aliquam tincidunt convallis dapibus. Phasellus lobortis, magna id molestie pretium, ipsum felis iaculis diam, vel semper nisi turpis a erat. Pellentesque non dolor ultrices velit dictum finibus at ac augue. Donec eleifend pretium elit, eget ornare velit consectetur in. Donec dapibus bibendum turpis, eget rutrum orci sollicitudin eu. Aliquam erat volutpat. Etiam sit amet porta nunc. Nunc accumsan ligula ex, id lacinia dui consequat at.</p>
 			<button type="button" class="btn">
-				<g:link controller="student" action="search">Search</g:link>
+				<g:link controller="librarian" action="search">Search</g:link>
 			</button>
 		</div>
 	</div>
