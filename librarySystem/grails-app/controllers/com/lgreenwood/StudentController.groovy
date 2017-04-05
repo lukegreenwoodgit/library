@@ -25,4 +25,25 @@ class StudentController {
 		session.role = null
 		redirect(url:'/')
 	}
+
+	def search() {
+	
+   	}
+
+    	def results() {
+
+		def bookProps = Book.metaClass.properties*.name
+
+	   	def books = Book.withCriteria{
+			"${params.queryType}"{
+				params.each{ field, value ->
+					if(bookProps.grep(field) && value) {
+						ilike(field, value)
+					}
+				}
+			}
+	    	}
+
+	    	return [books:books, totalBooks:Book.count()]
+    	}
 }

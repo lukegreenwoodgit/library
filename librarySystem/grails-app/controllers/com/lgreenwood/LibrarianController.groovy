@@ -44,6 +44,6 @@ class LibrarianController {
 			}
 	    	}
 
-	    	return [students:students]
+	    	return [students:students, totalStudents:Student.count()]
     	}
 }
