@@ -27,7 +27,7 @@ pre {
 }
 
 /* customizing bootstrap nav bar */
-.navbar {
+/*.navbar {
     margin-bottom: 0px;
     padding-right: 110px;
 }
@@ -71,7 +71,7 @@ a.navbar-brand {
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: #db4800;
 }
-
+*/
 @media (min-width: 768px) {
     .container {
         width: auto;
@@ -381,13 +381,13 @@ body, html {
 }
 
 a {
-    color: #db4800;
-    text-decoration: underline;
+    color: #337ab7;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #db4800;
-    text-decoration: none
+    color: #23527c;
+    text-decoration: underline;
 }
 
 h1 {

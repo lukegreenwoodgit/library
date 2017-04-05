@@ -3121,6 +3121,9 @@ fieldset[disabled] .btn-default.focus {
   background-color: #337ab7;
   border-color: #2e6da4;
 }
+.btn-primary a {
+	color: #FFF;
+}
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
@@ -4363,7 +4366,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     float: left;
   }
   .navbar-nav > li > a {
-    padding-top: 15px;
+    padding-top: 17px;
     padding-bottom: 15px;
   }
 }

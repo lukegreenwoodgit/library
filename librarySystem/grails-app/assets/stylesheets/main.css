@@ -51,7 +51,7 @@ a:hover, a:active {
 
 h1, h2, h3 {
     font-weight: normal;
-    font-size: 1.25em;
+    /*font-size: 1.25em;*/
     margin: 0.8em 0 0.3em 0;
 }
 
@@ -73,6 +73,10 @@ img {
 .content {
 }
 
+a.navbar-brand {
+	text-decoration: none;
+}
+
 .content h1 {
     border-bottom: 1px solid #CCCCCC;
     margin: 0.8em 1em 0.3em;
@@ -84,7 +88,7 @@ img {
 }
 
 .footer {
-    background: #48802c;
+    background: #f8f8f8;
     color: #000;
     clear: both;
     font-size: 0.8em;
@@ -146,7 +150,7 @@ img {
     background-color: #999999;
     color: #ffffff;
     outline: none;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+
 }
 
 .no-borderradius .nav a:focus, .no-borderradius .nav a:hover {
@@ -445,9 +449,6 @@ th.desc a {
     background: #ffffff;
 }
 
-th:hover, tr:hover {
-    background: #79b94c;
-}
 
 /* PAGINATION */
 
