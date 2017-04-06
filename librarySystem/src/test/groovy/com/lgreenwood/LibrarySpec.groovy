@@ -15,8 +15,24 @@ class LibrarySpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void libraryStudySpaces() {
+	when: "A library is created with a name and studySpaces"
+	def library = new Library (name:'Adsetts', studySpaces:'string')
+	then: "Validation test should fail"
+	!library.validate()
+    }
+
+    void libraryMaxStudySpaces() {
+	when: "A library is created with a name and studySpaces"
+	def library = new Library (name:'Adsetts', studySpaces:3000)
+	then: "Validation test should fail"
+	!library.validate()
+    }
+
+    void libraryMinStudySpaces() {
+	when: "A library is created with a name and studySpaces"
+	def library = new Library (name:'Adsetts', studySpaces:0)
+	then: "Validation test should fail"
+	!library.validate()
     }
 }

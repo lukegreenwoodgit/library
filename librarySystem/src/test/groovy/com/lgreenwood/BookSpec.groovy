@@ -15,8 +15,17 @@ class BookSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void nullValidBook() {
+	when: "A book is created with a title, subject and author"
+	def book = new Book (title:'Computing for dummies', subject:'Computing', author:'')
+	then: "Validation test should fail"
+	!book.validate()
+    }
+
+    void maxSizeValidBook() {
+	when: "A book is created with a title, subject and isbn"
+	def book = new Book (title:'Computing for dummies', subject:'Computing', isbn:'345454545534543543534')
+	then: "Validation test should fail"
+	!book.validate()
     }
 }
